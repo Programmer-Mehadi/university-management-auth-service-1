@@ -4,8 +4,8 @@ import cors from 'cors'
 const app: Application = express()
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
-
-app.get('/', (req: Request, res: any) => {
+// comment
+app.get('/', (req: Request, res: Response) => {
   res.send('Hello World!')
 })
 
